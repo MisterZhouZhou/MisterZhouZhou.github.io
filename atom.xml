@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>MisterZhou&#39;s blog</title>
   <icon>https://www.gravatar.com/avatar/e1d1b2ec4c6de9a70929fda131bfbf8c</icon>
-  <subtitle>我的第一个blog</subtitle>
+  <subtitle>知识点滴积累</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
