@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-12-18T15:12:49.000Z</updated>
+  <updated>2017-12-19T15:35:44.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,9 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>使用hexo搭建blog(二)</title>
+    <link href="http://yoursite.com/2017/12/19/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BAblog(%E4%BA%8C)/"/>
+    <id>http://yoursite.com/2017/12/19/使用hexo搭建blog(二)/</id>
+    <published>2017-12-19T15:30:29.000Z</published>
+    <updated>2017-12-19T15:35:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">不蒜子</a>统计站点的总访问量，即统计浏览了多少次；有多少人访问</p><h2 id="不蒜子配置及使用"><a href="#不蒜子配置及使用" class="headerlink" title="不蒜子配置及使用"></a>不蒜子配置及使用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1、在主题目录下 themes/next/layout/_partials目录下的footer.swig文件</span><br><span class="line">2、在文件末尾插入以下代码</span><br><span class="line"></span><br><span class="line">&lt;div&gt;</span><br><span class="line">&lt;script async src=&quot;https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">本站总访问量 &lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt; 次&amp;nbsp&amp;nbsp&amp;nbsp</span><br><span class="line">本站访客数&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;人次</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://ibruce.info/2015/04/04/busuanzi/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;不蒜子&lt;/a&gt;统计站点的总访问量，即统计浏览了多少次；有多少人访问&lt;/p&gt;
+&lt;h2 id=&quot;不蒜子配置及使用&quot;&gt;
+      
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="blog" scheme="http://yoursite.com/tags/blog/"/>
+    
+  </entry>
+  
+  <entry>
     <title>mac下使用hexo搭建blog</title>
-    <link href="http://yoursite.com/2017/12/11/mac%E4%B8%8B%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BAblog/"/>
-    <id>http://yoursite.com/2017/12/11/mac下使用hexo搭建blog/</id>
+    <link href="http://yoursite.com/2017/12/11/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BAblog(%E4%B8%80)/"/>
+    <id>http://yoursite.com/2017/12/11/使用hexo搭建blog(一)/</id>
     <published>2017-12-11T07:29:38.000Z</published>
     <updated>2017-12-18T15:12:49.000Z</updated>
     
