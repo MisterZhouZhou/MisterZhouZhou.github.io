@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title><![CDATA[使用hexo搭建blog(二)]]></title>
+      <url>/2017/12/19/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BAblog(%E4%BA%8C)/</url>
+      <content type="html"><![CDATA[<p><a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">不蒜子</a>统计站点的总访问量，即统计浏览了多少次；有多少人访问</p>
+<h2 id="不蒜子配置及使用"><a href="#不蒜子配置及使用" class="headerlink" title="不蒜子配置及使用"></a>不蒜子配置及使用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1、在主题目录下 themes/next/layout/_partials目录下的footer.swig文件</span><br><span class="line">2、在文件末尾插入以下代码</span><br><span class="line"></span><br><span class="line">&lt;div&gt;</span><br><span class="line">&lt;script async src=&quot;https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">本站总访问量 &lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt; 次&amp;nbsp&amp;nbsp&amp;nbsp</span><br><span class="line">本站访客数&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;人次</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      
+        <categories>
+            
+            <category> hexo </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> blog </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[使用hexo搭建blog(一)]]></title>
+      <url>/2017/12/11/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BAblog(%E4%B8%80)/</url>
+      <content type="html"><![CDATA[<p>使用以下命令前需要安装node环境，可以自行百度</p>
+<h2 id="1、-安装hexo"><a href="#1、-安装hexo" class="headerlink" title="1、 安装hexo"></a>1、 安装hexo</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g hexo</span><br></pre></td></tr></table></figure>
+<h2 id="2、初始化项目blog"><a href="#2、初始化项目blog" class="headerlink" title="2、初始化项目blog"></a>2、初始化项目blog</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 建立一个博客文件夹blog</span><br><span class="line">$ cd blog</span><br><span class="line">// 并初始化博客</span><br><span class="line">$ hexo init .</span><br></pre></td></tr></table></figure>
+<h2 id="3、安装插件"><a href="#3、安装插件" class="headerlink" title="3、安装插件"></a>3、安装插件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo --save</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ npm install hexo-renderer-marked --save</span><br><span class="line">$ npm install hexo-renderer-stylus --save</span><br><span class="line">$ npm install hexo-server --save</span><br></pre></td></tr></table></figure>
+<h2 id="4、创建新文章"><a href="#4、创建新文章" class="headerlink" title="4、创建新文章"></a>4、创建新文章</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new mac下使用hexo搭建blog</span><br></pre></td></tr></table></figure>
+<h2 id="5、生成静态页面"><a href="#5、生成静态页面" class="headerlink" title="5、生成静态页面"></a>5、生成静态页面</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate  // 简写 hexo g</span><br></pre></td></tr></table></figure>
+<h2 id="6、本地预览"><a href="#6、本地预览" class="headerlink" title="6、本地预览"></a>6、本地预览</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server  // 简写 hexo s</span><br></pre></td></tr></table></figure>
+<h2 id="7、设置主题Theme"><a href="#7、设置主题Theme" class="headerlink" title="7、设置主题Theme"></a>7、设置主题Theme</h2><p>可以到官方提供的主题列表中选取</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ cd themes/</span><br><span class="line">$ git clone git@github.com:iissnan/hexo-theme-next.git themes/next</span><br><span class="line"></span><br><span class="line">_config.yml配置文件中设置：</span><br><span class="line">theme: next</span><br><span class="line"></span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/iNerdStack/inerdstack.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>_config.yml配置文件中设置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br><span class="line"></span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/iNerdStack/inerdstack.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<h2 id="8、blog提交"><a href="#8、blog提交" class="headerlink" title="8、blog提交"></a>8、blog提交</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// hexo g</span><br><span class="line">$ hexo generate   </span><br><span class="line">// hexo d</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h2 id="9、创建分类、tag等"><a href="#9、创建分类、tag等" class="headerlink" title="9、创建分类、tag等"></a>9、创建分类、tag等</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 添加分类页面</span><br><span class="line">$ hexo new page &quot;categories&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="10、添加阅读数"><a href="#10、添加阅读数" class="headerlink" title="10、添加阅读数"></a>10、添加阅读数</h2><p>配置LeanCloud</p>
+<p>1、打开<a href="https://leancloud.cn/dashboard/applist.html#/apps" target="_blank" rel="noopener">LeanCloud</a>官网，注册一个账号，完成激活 </p>
+<p>2、创建应用</p>
+<p><img src="../../../../../images/20171218/201712184.png" alt="&quot;图片描述&quot;"> </p>
+<p>3、点击创建Class，类名叫做Counter</p>
+<p><img src="../../../../../images/20171218/201712181.png" alt="&quot;图片描述&quot;"> </p>
+<p>4、修改主题配置文件_config.yml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Show number of visitors to each article.</span><br><span class="line"># You can visit https://leancloud.cn get AppID and AppKey.</span><br><span class="line">leancloud_visitors:</span><br><span class="line">  enable: true</span><br><span class="line">  app_id: xx_id</span><br><span class="line">  app_key: xx_key</span><br></pre></td></tr></table></figure>
+<p><img src="../../../../../images/20171218/201712182.png" alt="&quot;图片描述&quot;"> </p>
+<p>5、配置域名</p>
+<p><img src="../../../../../images/20171218/201712183.png" alt="&quot;图片描述&quot;"> </p>
+]]></content>
+      
+        <categories>
+            
+            <category> hexo </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> blog </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>/2017/12/11/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+      
+        
+    </entry>
+    
+  
+  
+</search>
