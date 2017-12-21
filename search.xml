@@ -3,6 +3,37 @@
   
     
     <entry>
+      <title><![CDATA[使用hexo搭建blog(三)]]></title>
+      <url>/2017/12/21/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BAblog(%E4%B8%89)/</url>
+      <content type="html"><![CDATA[<h3 id="接下来就是关于hexo主题的美化了"><a href="#接下来就是关于hexo主题的美化了" class="headerlink" title="接下来就是关于hexo主题的美化了"></a>接下来就是关于hexo主题的美化了</h3><h2 id="添加github关注"><a href="#添加github关注" class="headerlink" title="添加github关注"></a>添加github关注</h2><p>效果图：</p>
+<p><img src="../../../../../images/20171221/201712211.png" alt="&quot;图片描述&quot;"></p>
+<p>1、在以下地址中可以任意选择一个</p>
+<p><a href="https://github.com/blog/273-github-ribbons" target="_blank" rel="noopener">https://github.com/blog/273-github-ribbons</a></p>
+<p><a href="http://tholman.com/github-corners/" target="_blank" rel="noopener">http://tholman.com/github-corners/</a></p>
+<p>2、拷贝右侧代码</p>
+<p><img src="../../../../../images/20171221/201712212.png" alt="&quot;图片描述&quot;"></p>
+<p>3、在themes/next/layout/_layout.swig文件中(放在<div class="headband"></div>的下面)，并把href改为你的github地址</p>
+<p><img src="../../../../../images/20171221/201712213.png" alt="&quot;图片描述&quot;"></p>
+]]></content>
+      
+        <categories>
+            
+            <category> hexo </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> blog </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[使用hexo搭建blog(二)]]></title>
       <url>/2017/12/19/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BAblog(%E4%BA%8C)/</url>
       <content type="html"><![CDATA[<p>使用<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">不蒜子</a>就是统计站点的总访问量，即统计浏览了多少次；有多少人访问</p>
@@ -11,7 +42,24 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-search --save</span><br><span class="line">2、</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br><span class="line">  # if auto, trigger search by changing input</span><br><span class="line">  # if manual, trigger search by pressing enter key or search button</span><br><span class="line">  trigger: auto</span><br><span class="line">  # show top n results per article, show all results by setting to -1</span><br><span class="line">  top_n_per_article: 1</span><br></pre></td></tr></table></figure>
 <p>2、在主题目录下 themes/next/_config.yml</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true //默认为false</span><br><span class="line">  # if auto, trigger search by changing input</span><br><span class="line">  # if manual, trigger search by pressing enter key or search button</span><br><span class="line">  trigger: auto</span><br><span class="line">  # show top n results per article, show all results by setting to -1</span><br><span class="line">  top_n_per_article: 1</span><br></pre></td></tr></table></figure>
-<h2 id="3、添加站内搜索"><a href="#3、添加站内搜索" class="headerlink" title="3、添加站内搜索"></a>3、添加站内搜索</h2>]]></content>
+<h2 id="3、添加打赏功能"><a href="#3、添加打赏功能" class="headerlink" title="3、添加打赏功能"></a>3、添加打赏功能</h2><p>1、获取微信二维码和支付宝二维码,具体做法就是先保存二维码到相册，再编辑照片裁剪出二维码图片（笨笨的方法）</p>
+<p>2、将准备的二维码照片放在themes/next/source/images/</p>
+<p>3、在主题目录themes/next/_config.yml放开以下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">reward_comment: 不要脸了~ _ ~不要脸了</span><br><span class="line">wechatpay: /images/webchatpay.jpg</span><br><span class="line">alipay: /images/alipay.jpg</span><br></pre></td></tr></table></figure>
+<p>重新构建就可以看到打赏效果了。</p>
+<p><font color="#d9b100">本人觉得打赏那个抖动效果不好，想直接去掉了，可以使用以下操作</font>：</p>
+<p>修改next/source/css/_common/components/post/post-reward.styl文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">/* 注释文字闪动效果</span><br><span class="line">#wechat:hover p&#123;</span><br><span class="line">    animation: roll 0.1s infinite linear;</span><br><span class="line">    -webkit-animation: roll 0.1s infinite linear;</span><br><span class="line">    -moz-animation: roll 0.1s infinite linear;</span><br><span class="line">&#125;</span><br><span class="line">#alipay:hover p&#123;</span><br><span class="line">    animation: roll 0.1s infinite linear;</span><br><span class="line">    -webkit-animation: roll 0.1s infinite linear;</span><br><span class="line">    -moz-animation: roll 0.1s infinite linear;</span><br><span class="line">&#125;</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
+<h2 id="4、添加评论"><a href="#4、添加评论" class="headerlink" title="4、添加评论"></a>4、添加评论</h2><p>next支持不少评论插件，以下都是可以内部支持的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;% include &apos;duoshuo.swig&apos; %&#125;</span><br><span class="line">&#123;% include &apos;disqus.swig&apos; %&#125;</span><br><span class="line">&#123;% include &apos;hypercomments.swig&apos; %&#125;</span><br><span class="line">&#123;% include &apos;youyan.swig&apos; %&#125;</span><br><span class="line">&#123;% include &apos;livere.swig&apos; %&#125;</span><br><span class="line">&#123;% include &apos;changyan.swig&apos; %&#125;</span><br><span class="line">&#123;% include &apos;gitment.swig&apos; %&#125;</span><br><span class="line">&#123;% include &apos;valine.swig&apos; %&#125;</span><br></pre></td></tr></table></figure>
+<p>本人使用的是livere(使用了一个简单点的·来必力)</p>
+<p>1、到<a href="https://livere.com/" target="_blank" rel="noopener">来必力</a>注册账号，填写站点</p>
+<p><img src="../../../../../images/20171220/201712203.png" alt="&quot;图片描述&quot;"></p>
+<p>2、拿到uid</p>
+<p><img src="../../../../../images/20171220/201712204.png" alt="&quot;图片描述&quot;"></p>
+<p>3、在主题目录themes/next/_config.yml放开以下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Support for LiveRe comments system.</span><br><span class="line"># You can get your uid from https://livere.com/insight/myCode (General web site)</span><br><span class="line"># 来必力</span><br><span class="line">livere_uid: youruid</span><br></pre></td></tr></table></figure>
+]]></content>
       
         <categories>
             
