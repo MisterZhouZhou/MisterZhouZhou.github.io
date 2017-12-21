@@ -81,21 +81,21 @@
 
 
 
-<meta name="description" content="接下来就是关于hexo主题的美化了添加github关注效果图：  1、在以下地址中可以任意选择一个 https://github.com/blog/273-github-ribbons http://tholman.com/github-corners/ 2、拷贝右侧代码  3、在themes/next/layout/_layout.swig文件中(放在的下面)，并把href改为你的github地">
+<meta name="description" content="基本配置完成后，接下来就是关于hexo主题的美化了 1、添加github关注效果图：  1、在以下地址中可以任意选择一个 https://github.com/blog/273-github-ribbons http://tholman.com/github-corners/ 2、拷贝右侧代码  3、在themes/next/layout/_layout.swig文件中，并把href改为你的git">
 <meta name="keywords" content="hexo,blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用hexo搭建blog(三)">
 <meta property="og:url" content="http://yoursite.com/2017/12/21/使用hexo搭建blog(三)/index.html">
 <meta property="og:site_name" content="MisterZhou&#39;s blog">
-<meta property="og:description" content="接下来就是关于hexo主题的美化了添加github关注效果图：  1、在以下地址中可以任意选择一个 https://github.com/blog/273-github-ribbons http://tholman.com/github-corners/ 2、拷贝右侧代码  3、在themes/next/layout/_layout.swig文件中(放在的下面)，并把href改为你的github地">
+<meta property="og:description" content="基本配置完成后，接下来就是关于hexo主题的美化了 1、添加github关注效果图：  1、在以下地址中可以任意选择一个 https://github.com/blog/273-github-ribbons http://tholman.com/github-corners/ 2、拷贝右侧代码  3、在themes/next/layout/_layout.swig文件中，并把href改为你的git">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/images/20171221/201712211.png">
 <meta property="og:image" content="http://yoursite.com/images/20171221/201712212.png">
 <meta property="og:image" content="http://yoursite.com/images/20171221/201712213.png">
-<meta property="og:updated_time" content="2017-12-21T13:17:16.000Z">
+<meta property="og:updated_time" content="2017-12-21T15:45:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用hexo搭建blog(三)">
-<meta name="twitter:description" content="接下来就是关于hexo主题的美化了添加github关注效果图：  1、在以下地址中可以任意选择一个 https://github.com/blog/273-github-ribbons http://tholman.com/github-corners/ 2、拷贝右侧代码  3、在themes/next/layout/_layout.swig文件中(放在的下面)，并把href改为你的github地">
+<meta name="twitter:description" content="基本配置完成后，接下来就是关于hexo主题的美化了 1、添加github关注效果图：  1、在以下地址中可以任意选择一个 https://github.com/blog/273-github-ribbons http://tholman.com/github-corners/ 2、拷贝右侧代码  3、在themes/next/layout/_layout.swig文件中，并把href改为你的git">
 <meta name="twitter:image" content="http://yoursite.com/images/20171221/201712211.png">
 
 
@@ -394,15 +394,17 @@
       
 
       
-        <h3 id="接下来就是关于hexo主题的美化了"><a href="#接下来就是关于hexo主题的美化了" class="headerlink" title="接下来就是关于hexo主题的美化了"></a>接下来就是关于hexo主题的美化了</h3><h2 id="添加github关注"><a href="#添加github关注" class="headerlink" title="添加github关注"></a>添加github关注</h2><p>效果图：</p>
+        <p>基本配置完成后，接下来就是关于hexo主题的美化了</p>
+<h2 id="1、添加github关注"><a href="#1、添加github关注" class="headerlink" title="1、添加github关注"></a>1、添加github关注</h2><p>效果图：</p>
 <p><img src="../../../../../images/20171221/201712211.png" alt="&quot;图片描述&quot;"></p>
 <p>1、在以下地址中可以任意选择一个</p>
 <p><a href="https://github.com/blog/273-github-ribbons" target="_blank" rel="noopener">https://github.com/blog/273-github-ribbons</a></p>
 <p><a href="http://tholman.com/github-corners/" target="_blank" rel="noopener">http://tholman.com/github-corners/</a></p>
 <p>2、拷贝右侧代码</p>
 <p><img src="../../../../../images/20171221/201712212.png" alt="&quot;图片描述&quot;"></p>
-<p>3、在themes/next/layout/_layout.swig文件中(放在<div class="headband"></div>的下面)，并把href改为你的github地址</p>
+<p>3、在themes/next/layout/_layout.swig文件中，并把href改为你的github地址</p>
 <p><img src="../../../../../images/20171221/201712213.png" alt="&quot;图片描述&quot;"></p>
+<h2 id="2、修改文章底部标签的-号换成图标"><a href="#2、修改文章底部标签的-号换成图标" class="headerlink" title="2、修改文章底部标签的#号换成图标"></a>2、修改文章底部标签的#号换成图标</h2><p>在themes/next/layout/_macro/post.swig文件中，将rel=”tag”后面的#号替换为<code>&lt;i class=&quot;fa fa-tag&quot;&gt;&lt;/i&gt;</code></p>
 
       
     </div>
@@ -449,9 +451,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
           
-            <a href="/tags/blog/" rel="tag"># blog</a>
+            <a href="/tags/blog/" rel="tag"><i class="fa fa-tag"></i> blog</a>
           
         </div>
       
@@ -662,7 +664,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#接下来就是关于hexo主题的美化了"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x662F;&#x5173;&#x4E8E;hexo&#x4E3B;&#x9898;&#x7684;&#x7F8E;&#x5316;&#x4E86;" class="headerlink" title="&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x662F;&#x5173;&#x4E8E;hexo&#x4E3B;&#x9898;&#x7684;&#x7F8E;&#x5316;&#x4E86;"></a>&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x662F;&#x5173;&#x4E8E;hexo&#x4E3B;&#x9898;&#x7684;&#x7F8E;&#x5316;&#x4E86;</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加github关注"><span class="nav-number"></span> <span class="nav-text"><a href="#&#x6DFB;&#x52A0;github&#x5173;&#x6CE8;" class="headerlink" title="&#x6DFB;&#x52A0;github&#x5173;&#x6CE8;"></a>&#x6DFB;&#x52A0;github&#x5173;&#x6CE8;</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、添加github关注"><span class="nav-number">1.</span> <span class="nav-text"><a href="#1&#x3001;&#x6DFB;&#x52A0;github&#x5173;&#x6CE8;" class="headerlink" title="1&#x3001;&#x6DFB;&#x52A0;github&#x5173;&#x6CE8;"></a>1&#x3001;&#x6DFB;&#x52A0;github&#x5173;&#x6CE8;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、修改文章底部标签的-号换成图标"><span class="nav-number">2.</span> <span class="nav-text"><a href="#2&#x3001;&#x4FEE;&#x6539;&#x6587;&#x7AE0;&#x5E95;&#x90E8;&#x6807;&#x7B7E;&#x7684;-&#x53F7;&#x6362;&#x6210;&#x56FE;&#x6807;" class="headerlink" title="2&#x3001;&#x4FEE;&#x6539;&#x6587;&#x7AE0;&#x5E95;&#x90E8;&#x6807;&#x7B7E;&#x7684;#&#x53F7;&#x6362;&#x6210;&#x56FE;&#x6807;"></a>2&#x3001;&#x4FEE;&#x6539;&#x6587;&#x7AE0;&#x5E95;&#x90E8;&#x6807;&#x7B7E;&#x7684;#&#x53F7;&#x6362;&#x6210;&#x56FE;&#x6807;</span></a></li></ol></div>
             
 
           </div>

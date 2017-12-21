@@ -1267,6 +1267,11 @@ pre .javascript .function {
 .use-motion .collection-title {
   opacity: 0;
 }
+.post-body p a:hover {
+  color: #2828ff;
+  border-bottom: none;
+  border-bottom: 1px solid #2828ff;
+}
 .posts-expand {
   padding-top: 40px;
 }
@@ -1933,7 +1938,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f7ff9c;
+  background: #9c49b1;
 }
 .links-of-blogroll {
   font-size: 13px;
