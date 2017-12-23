@@ -18,8 +18,12 @@
 <h2 id="2、修改文章底部标签的-号换成图标"><a href="#2、修改文章底部标签的-号换成图标" class="headerlink" title="2、修改文章底部标签的#号换成图标"></a>2、修改文章底部标签的#号换成图标</h2><p>在themes/next/layout/_macro/post.swig文件中，将rel=”tag”后面的#号替换为<code>&lt;i class=&quot;fa fa-tag&quot;&gt;&lt;/i&gt;</code></p>
 <h2 id="3、添加图文背景"><a href="#3、添加图文背景" class="headerlink" title="3、添加图文背景"></a>3、添加图文背景</h2><p>1、打开 next/layout/_layout.swig在<code>&lt;/body&gt;</code>之前添加代码</p>
 <p>2、代码：</p>
-<p><code></code></p>
-<p><pre><br><br></pre><br></p>
+<pre>
+
+</pre>
+
+
+
 <h2 id="4、添加图文背景"><a href="#4、添加图文背景" class="headerlink" title="4、添加图文背景"></a>4、添加图文背景</h2>]]></content>
       
         <categories>
