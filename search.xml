@@ -19,7 +19,7 @@
 <h2 id="3、添加图文背景"><a href="#3、添加图文背景" class="headerlink" title="3、添加图文背景"></a>3、添加图文背景</h2><p>1、打开 next/layout/_layout.swig在<code>&lt;/body&gt;</code>之前添加代码</p>
 <p>2、代码：</p>
 <p><code></code></p>
-]]></content>
+<h2 id="4、添加图文背景"><a href="#4、添加图文背景" class="headerlink" title="4、添加图文背景"></a>4、添加图文背景</h2>]]></content>
       
         <categories>
             
