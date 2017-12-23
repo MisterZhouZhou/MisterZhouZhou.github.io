@@ -92,7 +92,7 @@
 <meta property="og:image" content="http://yoursite.com/images/20171221/201712211.png">
 <meta property="og:image" content="http://yoursite.com/images/20171221/201712212.png">
 <meta property="og:image" content="http://yoursite.com/images/20171221/201712213.png">
-<meta property="og:updated_time" content="2017-12-23T06:42:08.000Z">
+<meta property="og:updated_time" content="2017-12-23T06:43:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用hexo搭建blog(三)">
 <meta name="twitter:description" content="基本配置完成后，接下来就是关于hexo主题的美化了 1、添加github关注效果图：  1、在以下地址中可以任意选择一个 https://github.com/blog/273-github-ribbons http://tholman.com/github-corners/ 2、拷贝右侧代码  3、在themes/next/layout/_layout.swig文件中，并把href改为你的git">
@@ -407,12 +407,7 @@
 <h2 id="2、修改文章底部标签的-号换成图标"><a href="#2、修改文章底部标签的-号换成图标" class="headerlink" title="2、修改文章底部标签的#号换成图标"></a>2、修改文章底部标签的#号换成图标</h2><p>在themes/next/layout/_macro/post.swig文件中，将rel=”tag”后面的#号替换为<code>&lt;i class=&quot;fa fa-tag&quot;&gt;&lt;/i&gt;</code></p>
 <h2 id="3、添加图文背景"><a href="#3、添加图文背景" class="headerlink" title="3、添加图文背景"></a>3、添加图文背景</h2><p>1、打开 next/layout/_layout.swig在<code>&lt;/body&gt;</code>之前添加代码</p>
 <p>2、代码：</p>
-<pre>
-
-</pre>
-
-
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if theme.canvas_nest %&#125;</span><br><span class="line">&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="4、添加图文背景"><a href="#4、添加图文背景" class="headerlink" title="4、添加图文背景"></a>4、添加图文背景</h2>
       
     </div>
