@@ -92,7 +92,7 @@
 <meta property="og:image" content="http://yoursite.com/images/20171221/201712211.png">
 <meta property="og:image" content="http://yoursite.com/images/20171221/201712212.png">
 <meta property="og:image" content="http://yoursite.com/images/20171221/201712213.png">
-<meta property="og:updated_time" content="2017-12-21T15:45:18.000Z">
+<meta property="og:updated_time" content="2017-12-23T06:13:44.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用hexo搭建blog(三)">
 <meta name="twitter:description" content="基本配置完成后，接下来就是关于hexo主题的美化了 1、添加github关注效果图：  1、在以下地址中可以任意选择一个 https://github.com/blog/273-github-ribbons http://tholman.com/github-corners/ 2、拷贝右侧代码  3、在themes/next/layout/_layout.swig文件中，并把href改为你的git">
@@ -404,12 +404,24 @@
 <p><img src="../../../../../images/20171221/201712212.png" alt="&quot;图片描述&quot;"></p>
 <p>3、在themes/next/layout/_layout.swig文件中，并把href改为你的github地址</p>
 <p><img src="../../../../../images/20171221/201712213.png" alt="&quot;图片描述&quot;"></p>
-<h2 id="2、修改文章底部标签的-号换成图标"><a href="#2、修改文章底部标签的-号换成图标" class="headerlink" title="2、修改文章底部标签的#号换成图标"></a>2、修改文章底部标签的#号换成图标</h2><p>在themes/next/layout/_macro/post.swig文件中，将rel=”tag”后面的#号替换为<code>&lt;i class=&quot;fa fa-tag&quot;&gt;&lt;/i&gt;</code></p>
+<h2 id="2、修改文章底部标签的-号换成图标"><a href="#2、修改文章底部标签的-号换成图标" class="headerlink" title="2、修改文章底部标签的#号换成图标"></a>2、修改文章底部标签的#号换成图标</h2><p>在themes/next/layout/_macro/post.swig文件中，将rel=”tag”后面的#号替换为<figure class="highlight plain"><figcaption><span>class</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 3、添加图文背景</span><br><span class="line">1、打开 next/layout/_layout.swig在```&lt; /body&gt;```之前添加代码</span><br><span class="line"></span><br><span class="line">2、代码：</span><br></pre></td></tr></table></figure></p>
+
+<p>```</p>
 
       
     </div>
     
     
+    
+
+    
+      <div>
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      </div>
     
 
     
@@ -445,6 +457,24 @@
       </div>
     
 
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    misterzhouzhou
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2017/12/21/使用hexo搭建blog(三)/" title="使用hexo搭建blog(三)">http://yoursite.com/2017/12/21/使用hexo搭建blog(三)/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
     
 
     <footer class="post-footer">
@@ -686,13 +716,14 @@
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">misterzhouzhou</span>
 
   
 </div>
 
+<!-- 
 
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
@@ -703,7 +734,7 @@
 
 
   <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.3</div>
-
+-->
 
 <div>
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -758,6 +789,8 @@
   
 
 
+  
+
 
 
 
@@ -796,6 +829,11 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
@@ -1320,5 +1358,14 @@
 
   
 
+  <!-- 背景线条 color ：线条颜色, 默认: '0,0,0'；三个数字分别为(R,G,B)
+    opacity: 线条透明度（0~1）, 默认: 0.5
+    count: 线条的总数量, 默认: 150
+    zIndex: 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1-->
+  
+    <script type="text/javascript"
+    color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  
+  
 </body>
 </html>

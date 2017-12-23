@@ -15,7 +15,9 @@
 <p><img src="../../../../../images/20171221/201712212.png" alt="&quot;图片描述&quot;"></p>
 <p>3、在themes/next/layout/_layout.swig文件中，并把href改为你的github地址</p>
 <p><img src="../../../../../images/20171221/201712213.png" alt="&quot;图片描述&quot;"></p>
-<h2 id="2、修改文章底部标签的-号换成图标"><a href="#2、修改文章底部标签的-号换成图标" class="headerlink" title="2、修改文章底部标签的#号换成图标"></a>2、修改文章底部标签的#号换成图标</h2><p>在themes/next/layout/_macro/post.swig文件中，将rel=”tag”后面的#号替换为<code>&lt;i class=&quot;fa fa-tag&quot;&gt;&lt;/i&gt;</code></p>
+<h2 id="2、修改文章底部标签的-号换成图标"><a href="#2、修改文章底部标签的-号换成图标" class="headerlink" title="2、修改文章底部标签的#号换成图标"></a>2、修改文章底部标签的#号换成图标</h2><p>在themes/next/layout/_macro/post.swig文件中，将rel=”tag”后面的#号替换为<figure class="highlight plain"><figcaption><span>class</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 3、添加图文背景</span><br><span class="line">1、打开 next/layout/_layout.swig在```&lt; /body&gt;```之前添加代码</span><br><span class="line"></span><br><span class="line">2、代码：</span><br></pre></td></tr></table></figure></p>
+
+<p>```</p>
 ]]></content>
       
         <categories>
